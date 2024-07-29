@@ -1,0 +1,268 @@
+/* Estilos Generales */
+* {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #003366; /* Azul oscuro para más contraste */
+    padding: 30px 50px;
+    height: 70px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Banner */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#banner div {
+    max-width: 60%;
+}
+
+#titulo {
+    font-family: "Romanesco";
+    font-weight: normal;
+    font-size: 96px;
+    text-align: left;
+    color: #003366; /* Azul oscuro */
+}
+
+#titulo2 {
+    font-family: "Inter";
+    text-align: left;
+    font-weight: 600;
+    font-size: 32px;
+    color: #003366; /* Azul oscuro */
+}
+
+h2 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Productos */
+#productos {
+    padding-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que las cartas se ajusten en múltiples líneas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre las cartas */
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en la carta */
+    margin: 10px;
+    width: 300px; /* Tamaño uniforme para todas las cartas */
+    background: #f0f8ff; /* Azul claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+section article img {
+    width: 250px; 
+    height: 250px;
+    max-width: 250px; /* Tamaño máximo estándar para las imágenes */
+    border-radius: 4px;
+}
+
+section article h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #003366; /* Azul oscuro */
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 10px;
+}
+
+.precio {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.precio-izquierda p {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.precio-derecha {
+    margin-left: auto;
+}
+
+.boton {
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boton:focus, a:focus, button:focus {
+    outline: 3px solid #ff9900; /* Cambia el color de enfoque a un naranja brillante */
+}
+
+.boton:hover {
+    background: #002244; /* Azul más oscuro */
+}
+
+/* Table */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid #003366; /* Azul oscuro */
+    margin: auto;
+}
+
+caption {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003366; /* Azul oscuro */
+    color: #ffffff;
+}
+
+td img {
+    max-width: 100px;
+}
+
+/* Footer */
+footer {
+    background: #003366; /* Azul oscuro */
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer section {
+    margin: 10px 0px;
+}
+
+footer section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer section ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer section ul li a {
+    color: #b3c6ff; /* Azul claro */
+    text-decoration: none;
+}
+
+#imagenes {
+    display: inline-block;
+    margin: 10px 50px;
+}
+
+a img {
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px;
+}
+
+/* Accesibilidad */
+a:focus, button:focus {
+    outline: 3px solid #ff9900; /* Cambia el color de enfoque a un naranja brillante */
+}
+
+button:hover {
+    background: #002244; /* Azul más oscuro */
+}
+
+a:hover {
+    color: #99ccff; /* Azul claro */
+}
+
+/* Artículos */
+article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+article:focus {
+    outline: none;
+    box-shadow: 0 0 10px #003366; /* Azul oscuro */
+}
+
+/* Botones */
+.boton {
+    border-radius: 35px;
+    padding: 8px 16px;
+    border: solid 2px #003366; /* Azul oscuro */
+    background: #003366; /* Azul oscuro */
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: auto; /* Para alinear a la derecha */
+}
+
+.boton:focus {
+    outline: 3px solid #ff9900; /* Cambia el color de enfoque a un naranja brillante */
+}
+
+.boton:hover {
+    background: #002244; /* Azul más oscuro */
+}
+
+#publicidad {
+    text-align: center;
+}
+#publicidad iframe {
+    margin: 0 auto;
+}
